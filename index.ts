@@ -5,7 +5,7 @@ import orderRoutes from "./src/routes/order.routes";
 const app = express();
 app.use(express.json());
 
-app.use("/api", orderRoutes);
+app.use("/bapl", orderRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

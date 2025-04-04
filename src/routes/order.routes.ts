@@ -1,11 +1,8 @@
 // routes/order.routes.ts
 import express from "express";
-import { OrderController } from "../controllers/order.controller";
+import { OndcReatilController } from "../controllers/RET10/ondc.retail.contoller";
 
 const router = express.Router();
-const orderController = new OrderController();
-
-router.post("/orders", orderController.createOrder);
-router.get("/orders/:id", orderController.getOrder);
+router.post("/select", new OndcReatilController().select);
 
 export default router;
