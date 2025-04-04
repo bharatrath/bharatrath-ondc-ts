@@ -1,0 +1,36 @@
+{
+  "name": "ondc-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate": "node merge-schema.js && prisma generate",
+    "prisma:migrate": "node merge-schema.js && prisma migrate dev",
+    "prisma:push": "node merge-schema.js && prisma db push",
+    "dev2": "ts-node index.ts",
+    "tsdev": "nodemon index.ts",
+    "dev": "nodemon index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.17",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.30.6",
+    "drizzle-orm": "^0.41.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "ts-node": "^10.9.2"
+  }
+}
