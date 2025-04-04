@@ -8,6 +8,34 @@
       "when": 1743688352603,
       "tag": "0000_worried_mandroid",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1743746919062,
+      "tag": "0001_jazzy_cammi",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1743747432786,
+      "tag": "0002_legal_black_bird",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1743747532742,
+      "tag": "0003_glossy_luke_cage",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1743747603272,
+      "tag": "0004_skinny_the_leader",
+      "breakpoints": true
     }
   ]
 }

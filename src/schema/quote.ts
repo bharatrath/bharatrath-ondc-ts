@@ -3,7 +3,7 @@ import { mysqlTable, varchar, decimal, serial, text, int } from "drizzle-orm/mys
 import { orders } from "./Order";
 
 export const quotes = mysqlTable("quotes", {
-  id: serial("id").primaryKey(),
+  id: varchar("id", { length: 50 }).primaryKey(),
   order_id: varchar("order_id", { length: 50 }).references(() => orders.id),
   currency: varchar("currency", { length: 3 }),
   value: decimal("value", { precision: 10, scale: 2 }),
@@ -11,8 +11,8 @@ export const quotes = mysqlTable("quotes", {
 });
 
 export const quoteBreakups = mysqlTable("quote_breakups", {
-  id: serial("id").primaryKey(),
-  quote_id: int("quote_id").references(() => quotes.id),
+  id: varchar("id", { length: 50 }).primaryKey(),
+  quote_id: varchar("quote_id", { length: 50 }).references(() => quotes.id),
   title: text("title"),
   value: decimal("value", { precision: 10, scale: 2 }),
   item_id: varchar("item_id", { length: 50 }),
